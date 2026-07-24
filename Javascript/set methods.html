@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+       <p id="demo"></p>
+       <p id="demo1"></p>
+       <p id="demo2"></p>
+       <h3 id="display"></h3>
+       <h2 id="dis"></h2>
+        <script> 
+        //set is collection of unique values.
+            // const letters=new Set(["a","b","c"]);
+            // //add method 
+            // letters.add("c");
+            // letters.add("d");
+            // letters.add("e");
+            // document.getElementById("demo").innerHTML="size=" + letters.size + "values";
+            
+
+
+        //Listing Set Elements
+            // const letters=new Set(["a","b","c"]);
+            // let text="";
+            // for(const x of letters)
+            // {
+            //     text+= x ;            
+            // }
+            //     console.log(text);
+            //  //document.getElementsByid("demo1").innerHTML= text;
+        
+
+        //   let set=new Set([1,2,3,4,5,5,6,6,])
+        //   set.forEach((num)=>{
+        //    console.log(num);
+         
+        //   })
+
+        // //has method
+        //   const letters=new Set(["a","b","c"]);
+        //   answer=letters.has("d");
+
+        //   document.getElementById("display").innerHTML=answer;
+
+        //forEach() method
+         const letters=new Set(["a","b","c"]);
+        let text="";
+        letters.forEach(function(value){
+            text+=value;
+        })
+        document.getElementById("dis").innerHTML=text;
+
+        </script>
+    </body>
+</html>
