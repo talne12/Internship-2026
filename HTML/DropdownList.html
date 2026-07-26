@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdownlist{
+            position: relative;
+            color: rebeccapurple;
+        }
+        ul{
+            display: none;
+            position: absolute;
+            list-style-type: none;
+        }
+        ul,li{
+            padding: 10px;
+            color: rebeccapurple;
+            
+        }
+        .dropdownlist:hover ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdownlist">
+        <button>List</button>
+        <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+            <li>Milk</li>
+        </ul>
+    </div>
+</body>
+</html>
