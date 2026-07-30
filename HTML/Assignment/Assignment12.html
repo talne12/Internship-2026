@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+           margin: 20px;
+           border: 1px solid black;
+           width: 1000px;
+           padding: 10px;
+        }
+       
+        fieldset{
+            display: inline-block;
+            width:90%;
+            margin:px;
+            vertical-align: top;
+        }
+        
+        table {
+            border-collapse: separate;
+            text-indent: initial;
+             border-spacing:0 2px;
+              width:100%
+        }
+        body{
+            display: block;
+            margin:8px;
+        }
+        td{
+            text-align: left;
+            padding: 8px;
+        }
+        #fname{
+            margin-right: 80px;
+            width: 35%;
+        }
+        #lname{
+            width:35%;
+        }
+        #Age{
+            margin-right: 310px;
+        }
+        button{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h2 style="text-align: left;">Internet Usage Survey</h2>
+
+    This survey is being conducted to help identify the Internet usage of our customers.<br>
+    Please take a few moments to complete and submit this short form. thank you for your cooperation.</label>
+<table>
+<th colspan="2">
+    
+    </th>
+<tr>
+ <td>  <label>What type of internet connection do you have?<br>(select one)</label></td>
+  <td> <select>
+      <option>Dial-up</option>
+      <option>DSL</option>
+      <option>High Speed Cable</option>
+      <option>Other</option>
+    </select></td>
+</tr>  
+
+<tr>
+    <td><label>What type of computer do you use most at home?</label></td>
+    <td><input type="radio" name="computer">Desktop
+    <input type="radio" name="computer">Laptop</td>
+    
+</tr><br>
+<tr>
+    
+    <td><label>How would you describe your main reason for using the internet?</label></td>
+   <td><input type="radio" name="reason">To do work releated-activities<br>
+    <input type="radio" name="reason">To do School-releated activities<br>
+    <input type="radio" name="reason">For entertainment purpose<br>
+    <input type="radio" name="reason">Other activities<br><br>
+    </td>
+ </tr><br>   
+    <tr>
+        <td><fieldset>
+        <legend>Type of sites visited</legend>
+        <label>What types of web sites o you access most often?<br>
+    Check all that apply?
+        </label><br><br>
+        
+        <input type="checkbox">Self Improvement<br>
+        <input type="checkbox">entertainment<br>
+        <input type="checkbox">News and Sports<br>
+        <input type="checkbox">Reference<br>
+        <input type="checkbox">Email<br>
+    </fieldset>
+    </td>
+            <td><fieldset>
+            <legend>Time spent using internet</legend>
+            <label>Durin an average week,how long do you spend online?</label><br><br><br>
+            <input type="radio" name="online">0-3 Hours<br>
+            <input type="radio" name="online">4-6 Hours<br>
+            <input type="radio" name="online">7-10 Hours<br>
+            <input type="radio" name="online">11-14 Hours<br>
+            <input type="radio" name="online">15 Hours
+        
+        </fieldset>
+        </td>
+    </tr>
+</table>
+
+ <label">Please Comment on your opinions concerning internet privacyy and safety: </label></td>
+   <br><textarea rows="4" cols="90"></textarea>
+    <br>
+    <br>
+    
+            <label>First name:</label>
+            <input type="name" id="fname" >
+        
+            <label>Last Name:</label>
+            <input type="name" id="lname"><br><br>
+
+            <label>Age:</label>
+            <input type="number" id="Age">
+
+
+            <label>Zip code:</label>
+            <input type="number" id="zipcode">
+
+            
+<br><br>
+
+<center><button type="submit" style="margin-right: 15px;">Click to submit</button>
+<button>Clear form</button>
+</center>
+</form>
+
+
+</body>
+</html>
