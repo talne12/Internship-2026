@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+             <script src="https://kit.fontawesome.com/5483f706e7.js" crossorigin="anonymous"></script>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+        <style>
+       
+        #main{
+            background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA5L2NvbG9yLXBpbmstamotMDExLWIuanBn.jpg);
+            position: relative;
+            height: 350px;
+        }
+        .M-class{
+            margin-top: 70px;
+        }  
+        #cart-button{
+            position: relative;
+            background-color:white;
+           top: -10px;
+            color: pink;
+        }
+        #g1{
+            position: relative;
+             
+            display: grid;
+            grid-template-columns: 50% 50%;
+       }
+       .footer-part{
+        position: relative;
+        background-color: black;
+       
+       }
+       img{
+        height: 100px;
+        width: 100px;
+        padding: 6px;
+       }
+        </style>
+    </head>
+
+    <body style="background-color: lightgrey;">
+       <div class="abc">
+        <div class="container-fluid" id="main">
+            <div class="container">
+                <header>
+                        <nav class="navbar navbar-expand-sm">
+                        <a href="#" class="navbar-brand text-light">Material Kit Pro</a>
+                       
+                        <!-- <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                          <ul class="navbar-nav ms-auto">
+
+                                <button class="btn text-light" type="button">
+                                    <i class="fa-solid fa-table-cells"></i>Components
+                                </button>
+      
+                                <div class="dropdown">
+                                    <button class="btn text-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        <i class="fa-solid fa-rug"></i> Sections
+                                    </button>
+                                     <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                    </ul>
+                               </div> 
+
+                               <div class="dropdown">
+                                    <button class="btn text-light dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown">
+                                        <i class="fa-solid fa-rug"></i> Examples
+                                    </button>
+                                     <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                    </ul>
+                               </div> 
+
+                                <button class="btn text-light" type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>Buy now
+                                </button>
+                            </ul>
+                        </nav>
+                </header>
+            </div>
+       
+            <div class="M-class container-fluid">
+                <div class="container d-flex justify-content-end">
+                <!-- <div class="d-flex justify-content-end"> -->
+                    <button class="btn" type="button" id="cart-button">
+                        <i class="fa-solid fa-cart-shopping"></i>0 items 
+                    </button>
+                </div>
+                <div class="container p-5 bg-white" id="g1">
+                    <div class="d-flex flex-column align-items-center">
+
+                       <img src="m_first_img.jpeg" style="height: 450px; width: 400px;">
+                       <div class="d-flex flex-row mt-2">
+                        <img src="m_se.jpeg" style="height: 80px; width: 60px;">
+                        <img src="m_first_img.jpeg" style="height: 80px; width: 60px; margin-left:8px;">
+                        <img src="m_3.jpeg" style="height: 80px; width: 60px; margin-left:8px ;"> 
+                        <img src="m_first_img.jpeg" style="height: 80px; width: 60px; margin-left:8px;">
+                        <button style="border: none; margin-left: 8px; background-color: white;"><i
+                                class="fa-solid fa-angle-right"></i></button>
+                       </div>
+                    </div>
+                   
+                    <div class="d-flex flex-column ">
+                        <h2 style="text-align: left;">Becky Silk Blazer</h2>
+                        <p style="font-size: large;">$335</p>
+
+                        <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: purple;">
+                               Description
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                This is the first item’s accordion body. 
+                                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions. 
+                                You can modify any of this with custom CSS or overriding our default variables. 
+                                It’s also worth noting that just about any HTML can go within the 
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               Designer information
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item’s accordion body.</strong> 
+                                It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions. 
+                                You can modify any of this with custom CSS or overriding our default variables. 
+                                It’s also worth noting that just about any HTML can go within the 
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Details and Care
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item’s accordion body.</strong> 
+                                It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions. 
+                                You can modify any of this with custom CSS or overriding our default variables.
+                                It’s also worth noting that just about any HTML can go within the 
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <br>
+
+                        <div class="container d-flex justify-content-between">
+                            <div>
+                                <p>Select color</p>
+                                <input type="text" id="text" placeholder="ROSE" style="border: none;">
+                                <hr>
+                            </div>
+                            <div>
+                                <p>Select Size</p>
+                                <input type="text" id="size" placeholder="SMALL" style="border: none;">
+                                <hr>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn d-flex and align-items-end" type="button" style=" color: white; background-color:pink; border-radius: 30px; position: absolute; top: 600px; left:1150px;">
+                            Add to Cart<i class="fa-solid fa-cart-shopping" ></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+            <br><br>
+
+            <div class="container justify-content-center">
+                <div class="row">
+                    <div class="col-lg-4 m-6 p-3 gap-2 " style="text-align:center;">
+                        <center>
+                            <i class="fa-solid fa-truck " style="height: 90px; width: 80px; color: blue;"></i><br><br>
+                        </center>
+                         <h3 >Days Delivery</h3>
+                          <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores atque eius vel 
+                            architecto.Molestias, nobis dolorem, quibusdam atque tempore?</p>
+                    </div>
+
+                    <div class="col-lg-4 m-6 p-3" style="text-align:center;" >
+                        <center>
+                            <i class="fa-solid fa-shield" style="height: 90px; width: 80px; color: green;"></i><br><br>
+                        </center>
+                        <h3>Refundable Policy</h3>
+                        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores atque eius vel 
+                            architecto.Molestias, nobis dolorem, quibusdam atque tempore?</p>
+                    </div>  
+
+                    <div class="col-lg-4 m-6 p-2 " style="text-align: center">
+                         <center>
+                            <i class="fa-solid fa-heart" style="height: 90px; width: 80px; color: red;"></i><br><br>
+                        </center>
+                        <h3 >Popular Item</h3>
+                        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores atque eius vel 
+                            architecto.Molestias, nobis dolorem, quibusdam atque tempore?</p>
+                    </div>           
+                </div>
+                <br><br>
+
+                <h3 style="text-align:center;">
+                   <b> You may also be interested in:</b>
+                </h3>
+                <br>
+                <div class="container mt-5">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100">
+                                <!-- card-img-top: border removes-->
+                                            <img class="card-img-top" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRZHul3yJfiqIeOtGfopeuNEAwAUPZ-Bq3BT6j_-NtexnheXycMutR5y3jwya5mq5ZLsjXgRoMbo7eYduTh4izQYYx48N1Qd6bXu0GRvMz3RdI4JipNXqtV_w" alt="Card image" style="width:90%; height: 500px;">
+                                            <div class="card-body">
+                                            <center>
+                                            <h4 class="text-danger text-uppercase">Trending</h4>
+                                            <h3><b>Doles and Gabbana</b></h3>
+                                            <p style="text-align: center;">Dolce & Gabbana's 'Greta tote <br>
+                                                has been crafted in Italy from<br>
+                                                hard-wearing red textured-<br>leather.</p>
+                                            </center>
+                                             </div>
+                                             <div class="d-flex justify-content-between price align-items-center">
+                                                <h4>$459</h4>
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100">
+                                            <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ2pUZgbNxDHn4w4JNYQ00UScEQjNqIXi60WFDsta1WsaUIqcVC1bwaEBNeZhoVkTH5PEO8vI-Da0HlNM9L7kfemrUw81QNu3xy8nd6CoA63uN54QG24pX_5WY" alt="Card image" style="width:90%; height: 500px;">
+                                            <div class="card-body d-flex flex-column align-items-center">
+                                            <center>
+                                            <h4 class="text-secondary text-uppercase">Popular</h4>
+                                            <h3><b>Balmain</b></h3>
+                                            <p style="text-align: center;">Balmain's mid-rise skinny jeans
+                                                are cut with stretch to ensure
+                                                they retain their second-skin fit but
+                                                move comfortably</p>
+                                            </div>
+                                            <div class="d-flex justify-content-between price align-items-center">
+                                                <h4>$459</h4>
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card h-100">
+                                            <img class="card-img-top" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTY-UYztZO61a9xfFIlVG75Myr8FnET0RL4lB_ZZldOT6X5oUA4YZLRUWI6wB8vDYScJEwPTEFF1xiJJeJAnrqsaTKcocngqRCbLml_rF0qTXFCUTE5xb1_JQ" alt="Card image" style="width:90%; height: 500px; ">
+                                            <div class="card-body">
+                                            <center>
+                                            <h4 class="text-secondary text-uppercase">Popular</h4>
+                                            <h3 ><b>Balenciaga</b></h3>
+                                                <p style="text-align: center;">Balenciaga's black textured-leather wallet is finished with
+                                                    the label's iconic 'Giant' studs.
+                                                    This is where you can...</p>
+                                            </center>
+                                            </div>
+                                            <div class="d-flex justify-content-between price align-items-center">
+                                                <h4>$459</h4>
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6">
+                            <div class="card h-100" >
+                                            <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS8644luG232pq2YV0nwntrEUjWgUc8VXWSV2sd1SnevG1AHP46NxA9Fjup6q7GzCYxYDUoaRU9iweMAY65cPbGYEef9bZ2Ow" alt="Card image" style="width:90%; height: 500px;">
+                                            <div class="card-body">
+                                            <center>
+                                            <h4 class="text-danger text-uppercase">Trending</h4>
+                                            <h3><b>Balenciaga</b></h3>
+                                            <p style="text-align: center;">Dolce & Gabbana's 'Greta tote has been crafted in Italy from hard-wearing red texturedleather.</p>
+                                            </center>
+                                            </div>
+                                            <div class="d-flex justify-content-between price align-items-center">
+                                                <h4>$459</h4>
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                 <br><br>
+                </div>
+            </div>
+
+                 <div class="container-fluid footer-part">
+                    <br>
+                    <div class="container " id="f-1" >
+                        <div class=" container row">
+                          
+                            <div class="col-lg-4 col-sm-1 text-secondary">
+                                <h4 class="text-white">About Us</h4>
+                                <p>Creative Tim is a startup that creates design tools that make 
+                                    the web development process faster and easier.<br><br>
+                                    We love the web and care deeply for how users interact with a digital product. 
+                                    We power businesses and individuals to create better looking web projects around the world.
+                               </p>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-1 text-secondary" >
+                                <h4 class="text-white " style="position: absolute; left: 750px;">Social Feed</h4><br><br>
+                                <ul type="none">
+                                     <li>
+                                        <i class="fa-brands fa-twitter" style="color: white;"></i>
+                                        How to handle ethical disagrements with yourclients
+                                     </li>
+                                      <li>
+                                        <i class="fa-brands fa-twitter" style="color: white;"></i>
+                                        The tangible benefits of designing at 1x pixel density.
+                                     </li>
+                                     <li>
+                                        <i class="fa-brands fa-square-facebook" style="color: white;"></i>
+                                        A collection of 25 stunning sites that you can use for inspiration.
+                                     </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-1 text-secondary">
+                                <h4 class="text-light">Instagram Feed</h4>
+                                <div class="d-flex flex-row"  >
+                                    <img src="/mountain.jpg">
+                                    <img src="/c1.jpeg">
+                                    <img src="c2.jpeg">
+                                    <img src="m_se.jpeg">
+                                </div>
+
+                                <div class="d-flex flex-row">
+                                    <img src="/mountains.jpg">
+                                    <img src="/c1.jpeg">
+                                    <img src="c2.jpeg">
+                                    <img src="m_se.jpeg">
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <hr class="container" style ="color: white;" >
+                    <div class="container d-flex flex-row justify-content-between align-items-center">
+                        <div>
+                            <button class="btn text-light">BLOG</button>
+                            <button class="btn text-light">PRESENTATION</button>
+                            <button class="btn text-light">DISCOVER</button>
+                            <button class="btn text-light">PAYMENT</button>
+                            <button class="btn text-light">CONTACT US</button>
+                        </div>
+                        <div>
+                               <P class="text-light">Copyrigth @ 2026 Creative Tim All Rights Reserved</P>
+                        </div>
+                    </div>
+
+                 </div>
+
+            </div>
+  <br>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
