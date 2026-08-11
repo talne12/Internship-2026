@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+   
+    .header{
+        position: sticky;
+        top: 21px;
+        color: white;
+        img{
+        height: 60px;
+        width: 100%;
+        object-fit: cover;
+        }
+        
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top:0px;
+        justify-content: space-around;
+        width: 100%;
+        
+        button{
+        background-color: yellow; 
+        border-radius: 30px;
+        height: 35px;
+        width: 200px; 
+        border: none;
+        align-items: center;
+    }
+    }
+    .menu p{
+        padding:10px;
+    }
+    
+
+    img{
+        height: 700px;
+        width: 100%;
+    }
+    .img2
+          img{
+            
+            position: absolute;
+            top: 200px;
+            left: 250px;
+            width: 550px;
+            height: auto;
+        
+    }
+    
+    .text{
+        position: absolute;
+        top: 230px;  
+        left: 55%;
+        border: none;
+        color: white;
+    }
+    .text h1{
+        font-size: 45px;
+        }
+    
+    .text button{
+            background-color: aqua;
+            height: 50px;
+            width: 220px;
+            color: white;
+            border: none;
+            border-radius: 30px;
+        }
+    .dropdown{
+        position: relative;
+    }
+    .d-menu {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background:none;
+        width: 100px;
+        display: none;
+        padding: 0ch;
+    }
+    .d-menu p{
+      color: white;
+    }
+    .dropdown:hover .d-menu{
+        display: block;
+    }
+    .dropdown1{
+        position: relative;
+    }
+    .b-menu{
+          position: absolute;
+        top: 30px;
+        left: 0;
+        background:none;
+        width: 100px;
+        display: none;
+        padding: 0ch;
+    }
+    .dropdown1:hover .b-menu{
+        display: block;
+    }
+</style>
+</head>
+<body style="font-family:'Poppins',sans-serif;">
+    <header class="header">
+        <img src="background..jpg">
+        <div class="menu">
+            
+            <p style="font-size: 20px;">
+               <i class="fa-solid fa-book-open"></i>EDUMARK
+            </p>
+            <p>Home</p>
+            <p>Course</p>
+            <div class="dropdown">
+            <p>Pages</p>
+            <div class="d-menu">
+                <p>page 1</p>
+                <p>page 2</p>
+                <p>page 3</p>
+            </div>
+            </div>
+            <p>About</p>
+            <div class="dropdown1">
+            <p>Blog</p>
+            <div class="b-menu">
+            <p>new</p>
+            <p>old</p>
+            </div>
+            </div>
+            <p>Contact</p>
+            <p >
+                <i class="fa-solid fa-user"></i>
+                Log in
+            </p>
+            <button>
+                <i class="fa-solid fa-phone"></i>
+                +30 678 975 2456
+            </button>
+        </div>
+        
+    </header>
+    <div class="conatiner">
+       <img src="background..jpg">
+        <div class="text">
+         <h1>Learn Your<br> Favourite Course<br> From Online</h1>
+         <button>Browse Your Courses</button>
+         </div>
+   </div>
+    <div class="img2">
+        <img src="/pc_img.png">
+  </div>
+</body>
+</html>
