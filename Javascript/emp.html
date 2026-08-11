@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+       
+        <script>
+            let employeeName = "rahul"; 
+            let grade = "A";
+            let salary = 25000;
+            let increment;
+            switch(grade){
+                case "A":
+                    increment=20;
+                    break;
+                case "B":
+                    increment=15;
+                    break;
+                case "C":
+                    increment=10;
+                    break;
+                case "D":
+                    increment=5;
+                    break;
+                default:
+                    increment=0;
+                     break;
+            }
+            let incMoney=salary*increment/100;
+            let newSal=salary+incMoney;
+
+            console.log("Employee name:"+employeeName);
+            console.log("grade:"+grade);
+            console.log("salary:"+salary);
+            console.log("increase money"+incMoney);
+            console.log("new salary:"+newSal);
+        </script>
+    </body>
+</html>
