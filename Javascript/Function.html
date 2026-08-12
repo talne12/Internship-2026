@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1 id="h1"></h1>
+    <input type="text" id="search" placeholder="Enter your name"/>
+    <button onclick="search()">search</button>
+    <script>
+    function search()
+    {
+        let str=document.getElementById("search").value;
+        let database=["user1","user2","user3","user4"];
+
+        let ans=database.includes(str);
+        
+        if(ans==true)
+        {
+            document.getElementById("h1").innerHTML="yes data is present";
+            let indexing=database.indexOf(str);
+            document.getElementById("demo").innerHTML=`data is present at indexing location ${indexing}`
+          
+        }
+        else
+        {
+            document.getElementById("h1").innerHTML=("no data is present");
+        }
+    }
+    </script>
+</body>
+</htmml>
